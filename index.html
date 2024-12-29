@@ -1,0 +1,92 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Video Uploader</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Video Uploader</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Upload Video</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Share your videos with the world!</h2>
+        <p>Upload your videos and add hashtags to post them on Facebook.</p>
+        <a href="upload.html" class="btn">Get Started</a>
+    </main>
+</body>
+</html>
+
+<!-- upload.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video | Video Uploader</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Upload Your Video</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Upload Video</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="uploadForm">
+            <label for="video">Select Video:</label>
+            <input type="file" id="video" name="video" accept="video/*" required>
+
+            <label for="hashtags">Add Hashtags:</label>
+            <input type="text" id="hashtags" name="hashtags" placeholder="#example #video" required>
+
+            <button type="submit">Upload and Post</button>
+        </form>
+        <div id="responseMessage"></div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+<!-- gallery.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Video Uploader</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Video Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Upload Video</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="videoGallery">
+            <p>No videos uploaded yet. Start by uploading your first video!</p>
+        </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

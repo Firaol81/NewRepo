@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your Video</h1>
+        <p id="responseMessage" class="response-message"></p>
+        <form id="uploadForm">
+            <!-- Video Upload -->
+            <label for="video">Select Video:</label>
+            <input type="file" id="video" name="video" accept="video/*" required>
+            <br><br>
+            
+            <!-- Hashtags Input -->
+            <label for="hashtags">Enter Hashtags:</label>
+            <input type="text" id="hashtags" name="hashtags" placeholder="#example #amazingVideo" required>
+            <br><br>
+            
+            <!-- Description Input -->
+            <label for="description">Add a Description:</label>
+            <textarea id="description" name="description" placeholder="Write something about your video..." rows="4" required></textarea>
+            <br><br>
+            
+            <!-- Font Selector -->
+            <label for="fontChoice">Choose Font Style:</label>
+            <select id="fontChoice" name="fontChoice">
+                <option value="Arial" style="font-family: Arial;">Arial</option>
+                <option value="Georgia" style="font-family: Georgia;">Georgia</option>
+                <option value="Courier New" style="font-family: 'Courier New';">Courier New</option>
+                <option value="Verdana" style="font-family: Verdana;">Verdana</option>
+                <option value="Tahoma" style="font-family: Tahoma;">Tahoma</option>
+            </select>
+            <br><br>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="upload-btn">Upload to Facebook</button>
+        </form>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
